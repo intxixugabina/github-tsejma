@@ -1,0 +1,196 @@
+<html>
+  <head>
+    <title>Your first Angular app</title>
+
+    <style>
+     #contenedor {
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color: #A9F5BC;
+  width: 796px;
+  overflow: hidden;
+}
+
+#cabecera {
+  border-bottom: 2px solid black;
+  width: 796px;
+  height: 25px;
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#menu {
+  float: left;
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
+  width: 198px;
+  padding: 1px;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+}
+
+#contenido {
+  float: left;
+  width: 580px;
+  padding: 8px;
+  height: auto;
+  background-color: #F3F781;
+  text-align: center;
+  min-height: 400px;
+  position: relative;
+}
+
+/* el iframe debe ocupar todo el espacio de #contenido */
+#contenido iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 0;
+}
+
+/* le damos estilos a los enlaces para que parezcan botones */
+#menu a {
+  display: inline-block;
+  margin: 3px 10px;
+  padding: 4px 10px;
+  background: #eee;
+  color: #333;
+  text-decoration: none;
+}            
+  </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light " style=" width: 100%;
+z-index: 1;
+background-color:#AB1CAF;
+top:0%;
+left:0%;
+position: fixed;">
+
+
+   <a class="navbar-brand"  id="a1" href="#">
+   
+   </a>
+   <a class="navbar-brand" href="#">  
+         
+   <img src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeHAvQmc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--3bce224b6e32c9b9558f98c02c1dfdcef06ea2f4/1.png" width="160"> 
+  
+   </a>
+
+
+   <button 
+                        class="navbar-toggler" 
+                        type="button"
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" 
+                        aria-expanded="false"
+                         aria-label="Toggle navigation">
+
+                            <span class="navbar-toggler-icon"></span>
+   </button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
+<ul class="navbar-nav ml-auto" style="margin-right:5%;">
+<li class="nav-item ">
+  <a  id="h2" class="nav-link active"  aria-current="page" href="" >&nbsp&nbsp&nbspInicio</a></li>
+
+ <li class="nav-item dropdown ">
+          <a style="color: white"
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false" 
+            ><font style="vertical-align: inherit"
+              ><font   class="opt" id="h2"style="vertical-align: inherit">&nbsp&nbsp&nbspBotellines</font></font
+            ></a >
+          <ul id="m"  class="dropdown-menu" >
+            <li><a class="dropdown-item" class="opt"  id="h1" href=""> </a></li>
+            
+             <li><a class="dropdown-item"  class="opt" id="h1" href="" > </a></li>
+              <li><a class="dropdown-item"  class="opt" id="h1" href=""> </a></li>
+              <li><a class="dropdown-item"  class="opt"  id="h1" href=""> </a></li>
+               <li><a class="dropdown-item"  class="opt" id="h1" href=""> </a></li>
+            </li>
+            
+          </ul>
+        </li>
+  
+                                                                       
+
+              <li class="nav-item dropdown ">
+          <a style="color: white"
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false" 
+            ><font style="vertical-align: inherit"
+              ><font   class="opt" id="h2"style="vertical-align: inherit">&nbsp&nbsp&nbspBolsas </font></font></a >
+          <ul id="m"  class="dropdown-menu" >
+             <li><a class="dropdown-item" class="opt"  id="h1" target="miIframe" href="https://es.stackoverflow.com">Ejercicio 1</a>
+          </li>
+            
+             <li><a class="dropdown-item"  class="opt" id="h1" href="" > </a></li>
+              <li><a class="dropdown-item"  class="opt" id="h1" href=""> </a></li>
+              <li><a class="dropdown-item"  class="opt"  id="h1" href=""> </a></li>
+               <li><a class="dropdown-item"  class="opt" id="h1" href=""> </a></li>
+            </li>
+            
+          </ul>
+        </li>
+       
+       <li class="nav-item ">
+
+</ul>
+  <!--barra de busqueda!-->
+<!--<form class="form-inline my-2 my-lg-0 d-flex " style="" height="50">
+  <input class="form-control  mr-sm-2 " style="background-color:white;color:black;height:20%;margin-top:0%;" type="search" placeholder="Search" aria-label="Search" style="margin-left: 0%;">
+  <button class="btn btn-outline-success my-2 my-sm-0  "  style="background-color:black;color:white;height:20%;"  type="submit">Search</button>
+</form>-->
+ <div class="col-1"></div>
+</div>
+</nav>
+<add-one-button>Loading...</add-one-button>
+
+
+
+
+
+<div id="contenedor">
+  <div id="cabecera">
+    
+  </div>
+
+  <div id="menu">
+    <a target="miIframe" href="https://es.stackoverflow.com">Ejercicio 1</a>
+    <a target="miIframe" href="https://www.google.com">Ejercicio 2</a>
+    <a target="miIframe" href="https://www.facebook.com">Ejercicio 3</a>
+  </div>
+
+  <div id="contenido">
+    <iframe name="miIframe"></iframe>
+  </div>
+</div>
+
+
+
+
+
+
+  </body>
+</html>
